@@ -1,0 +1,45 @@
+{
+    "immowelt": {
+            "name": "immowelt",
+            "urls":[
+                "https://www.immowelt.de/liste/ueberlingen-bodensee/wohnungen/mieten?d=true&pma=1000&r=10&sd=DESC&sf=TIMESTAMP&sp=1",
+                "https://www.immowelt.de/liste/friedrichshafen/wohnungen/mieten?d=true&pma=1000&r=10&sd=DESC&sf=TIMESTAMP&sp=1",
+                "https://www.immowelt.de/liste/uhldingen-muehlhofen/wohnungen/mieten?d=true&pma=1000&r=3&sd=DESC&sf=TIMESTAMP&sp=1",
+                "https://www.immowelt.de/liste/meersburg-bodensee/wohnungen/mieten?d=true&pma=1000&r=5&sd=DESC&sf=TIMESTAMP&sp=1"
+            ],
+            "class": "mainSection-b22fb noProject-eaed4"
+        },
+    "immoscout":
+        {
+            "name": "immoScout24",
+            "urls":[
+                "https://www.immobilienscout24.de/Suche/de/baden-wuerttemberg/bodenseekreis/ueberlingen/wohnung-mieten?price=-1000.0&pricetype=calculatedtotalrent&enteredFrom=result_list",
+                "https://www.immobilienscout24.de/Suche/de/baden-wuerttemberg/bodenseekreis/friedrichshafen/wohnung-mieten?price=-1000.0&pricetype=calculatedtotalrent&enteredFrom=result_list",
+                "https://www.immobilienscout24.de/Suche/de/baden-wuerttemberg/bodenseekreis/uhldingen-muehlhofen/wohnung-mieten?price=-1000.0&pricetype=calculatedtotalrent&enteredFrom=result_list",
+                "https://www.immobilienscout24.de/Suche/de/baden-wuerttemberg/bodenseekreis/meersburg/wohnung-mieten?price=-1000.0&pricetype=calculatedtotalrent&enteredFrom=result_list"
+            ],
+            "class": "result-list-entry__brand-title-container "
+        },
+    "immonet":
+        {
+            "name": "immonet",
+            "urls":[
+                "https://www.immonet.de/immobiliensuche/sel.do?pageoffset=1&objecttype=1&listsize=26&locationname=%C3%9Cberlingen&acid=&actype=&city=154080&ajaxIsRadiusActive=false&sortby=19&suchart=2&radius=0&pcatmtypes=1_2&pCatMTypeStoragefield=&parentcat=1&marketingtype=2&fromprice=&toprice=1000&fromarea=&toarea=&fromplotarea=&toplotarea=&fromrooms=&torooms=&objectcat=-1&wbs=-1&fromyear=&toyear=&fulltext=&absenden=Ergebnisse+anzeigen",
+                "https://www.immonet.de/immobiliensuche/sel.do?pageoffset=1&listsize=26&objecttype=1&locationname=Friedrichshafen&acid=&actype=&city=105182&ajaxIsRadiusActive=true&sortby=19&suchart=2&radius=0&pcatmtypes=1_2&pCatMTypeStoragefield=1_2&parentcat=1&marketingtype=2&fromprice=&toprice=1000&fromarea=&toarea=&fromplotarea=&toplotarea=&fromrooms=&torooms=&objectcat=-1&wbs=-1&fromyear=&toyear=&fulltext=&absenden=Ergebnisse+anzeigen",
+                "https://www.immonet.de/immobiliensuche/sel.do?pageoffset=1&listsize=26&objecttype=1&locationname=Uhldingen-M%C3%BChlhofen&acid=&actype=&city=146703&ajaxIsRadiusActive=true&sortby=19&suchart=2&radius=0&pcatmtypes=1_2&pCatMTypeStoragefield=1_2&parentcat=1&marketingtype=2&fromprice=&toprice=1000&fromarea=&toarea=&fromplotarea=&toplotarea=&fromrooms=&torooms=&objectcat=-1&wbs=-1&fromyear=&toyear=&fulltext=&absenden=Ergebnisse+anzeigen",
+                "https://www.immonet.de/immobiliensuche/sel.do?pageoffset=1&listsize=26&objecttype=1&locationname=Meersburg&acid=&actype=&city=121089&ajaxIsRadiusActive=true&sortby=19&suchart=2&radius=0&pcatmtypes=1_2&pCatMTypeStoragefield=1_2&parentcat=1&marketingtype=2&fromprice=&toprice=1000&fromarea=&toarea=&fromplotarea=&toplotarea=&fromrooms=&torooms=&objectcat=-1&wbs=-1&fromyear=&toyear=&fulltext=&absenden=Ergebnisse+anzeigen"
+            ],
+            "class": "block ellipsis text-225 text-default"
+        },
+    "ebay":
+        {
+            "name": "ebay",
+            "urls":[
+                "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/ueberlingen/anzeige:angebote/preis::1000/c203l9200",
+                "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/friedrichshafen/anzeige:angebote/preis::1000/c203l921",
+                "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/uhldingen-muehlhofen/anzeige:angebote/preis::1000/c203l15248",
+                "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/meersburg/anzeige:angebote/preis::1000/c203l15294"
+            ],
+            "class": "ellipsis"
+        }
+}

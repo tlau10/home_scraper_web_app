@@ -25,5 +25,4 @@ def write_json_file(file_path, json_object):
     @param json_object: json object to write into file
     """
     json_object = json.dumps(json_object, indent = 2)
-    print(json_object)
     write_to_file(file_path = file_path, text = json_object)

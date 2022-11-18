@@ -64,6 +64,28 @@ class ImmoweltScraper(AbstractScraper):
 
         self.save_items()
 
+def remove_from_whitelist(item):
+    """Remove item from whitelist"""
+    data = read_json_file(file_path = LIST)
+
+    # remove from whitelist
+    whitelist = data["whitelist"]
+    whitelist.remove(item)
+    data["whitelist"] = whitelist
+
+    write_json_file(file_path = LIST, json_object = data)
+
+def add_to_blacklist(item):
+    """Add item to blacklist"""
+    data = read_json_file(file_path = LIST)
+
+    # add to blacklist
+    blacklist = data["blacklist"]
+    blacklist.append(item) 
+    data["blacklist"] = blacklist
+
+    write_json_file(file_path = LIST, json_object = data)
+
 if __name__=="__main__":
 
     data = read_json_file(file_path = WEBSITE)

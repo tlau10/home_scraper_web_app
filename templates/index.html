@@ -10,7 +10,11 @@
                 <tr>
                     <td></td>
                     <td><a href={{link}} target="_blank">{{ link }}</a></td>
-                    <td></td>
+                    <td>
+                        <form action=/{{link}} method="get">
+                            <button type="submit" class="btn btn-primary btn-sm">DELETE</button>
+                        </form>
+                    </td>
                 </tr>
             {% endfor %}
         </table>

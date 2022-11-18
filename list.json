@@ -1,8 +1,29 @@
 {
   "whitelist": [
+    "https://www.immonet.de/angebot/48249395",
+    "https://www.immonet.de/angebot/49048101",
+    "https://www.immonet.de/angebot/48986938",
+    "https://www.immowelt.de/expose/27tnr5v",
+    "https://www.immonet.de/angebot/49081636",
+    "https://www.immonet.de/angebot/48400808",
     "https://www.immowelt.de/expose/272925w",
+    "https://www.immonet.de/angebot/49021510",
+    "https://www.immonet.de/angebot/49053773",
     "https://www.immowelt.de/expose/272wj5w",
-    "https://www.immowelt.de/expose/27tnr5v"
+    "https://www.immonet.de/angebot/49064704",
+    "https://www.immonet.de/angebot/49055263",
+    "https://www.immonet.de/angebot/43397624",
+    "https://www.immonet.de/angebot/48855037",
+    "https://www.immonet.de/angebot/49081635",
+    "https://www.immonet.de/angebot/48155208",
+    "https://www.immonet.de/angebot/48736915",
+    "https://www.immonet.de/angebot/48937780",
+    "https://www.immonet.de/angebot/49068440",
+    "https://www.immonet.de/angebot/45026212",
+    "https://www.immonet.de/angebot/48986531",
+    "https://www.immonet.de/angebot/48973263",
+    "https://www.immonet.de/angebot/48573332",
+    "https://www.immonet.de/angebot/48508022"
   ],
   "blacklist": [
     "https://www.immowelt.de/expose/26k9s5p",

@@ -29,7 +29,7 @@
                 "https://www.immonet.de/immobiliensuche/sel.do?pageoffset=1&listsize=26&objecttype=1&locationname=Uhldingen-M%C3%BChlhofen&acid=&actype=&city=146703&ajaxIsRadiusActive=true&sortby=19&suchart=2&radius=0&pcatmtypes=1_2&pCatMTypeStoragefield=1_2&parentcat=1&marketingtype=2&fromprice=&toprice=1000&fromarea=&toarea=&fromplotarea=&toplotarea=&fromrooms=&torooms=&objectcat=-1&wbs=-1&fromyear=&toyear=&fulltext=&absenden=Ergebnisse+anzeigen",
                 "https://www.immonet.de/immobiliensuche/sel.do?pageoffset=1&listsize=26&objecttype=1&locationname=Meersburg&acid=&actype=&city=121089&ajaxIsRadiusActive=true&sortby=19&suchart=2&radius=0&pcatmtypes=1_2&pCatMTypeStoragefield=1_2&parentcat=1&marketingtype=2&fromprice=&toprice=1000&fromarea=&toarea=&fromplotarea=&toplotarea=&fromrooms=&torooms=&objectcat=-1&wbs=-1&fromyear=&toyear=&fulltext=&absenden=Ergebnisse+anzeigen"
             ],
-            "class": "block ellipsis text-225 text-default"
+            "class": "flex-grow-1 display-flex flex-direction-column box-25 overflow-hidden cursor-hand"
         },
     "ebay":
         {

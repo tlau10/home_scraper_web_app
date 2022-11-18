@@ -24,10 +24,13 @@ class AbstractScraper:
         """save items to json file and eliminate duplicates beforehand"""
         data = read_json_file(file_path = LIST)
 
+        blacklist = data["blacklist"]
         whitelist = data["whitelist"]
+
         whitelist += self.items
 
         whitelist = self.eliminate_duplicates(list_ = whitelist)
+        whitelist = self.subtract_lists(whitelist, blacklist)
 
         data["whitelist"] = whitelist
 
@@ -36,6 +39,10 @@ class AbstractScraper:
     def eliminate_duplicates(self, list_):
         """take out duplicates from given list"""
         return list(set(list_))
+
+    def subtract_lists(self, list_a, list_b):
+        "return subtraction of two lists"
+        return list(set(list_a) - set(list_b))
 
 class ImmoweltScraper(AbstractScraper):
     """Scraper class for immowelt"""
@@ -65,7 +72,7 @@ class ImmoweltScraper(AbstractScraper):
         self.save_items()
 
 def remove_from_whitelist(item):
-    """Remove item from whitelist"""
+    """remove item from whitelist"""
     data = read_json_file(file_path = LIST)
 
     # remove from whitelist
@@ -76,7 +83,7 @@ def remove_from_whitelist(item):
     write_json_file(file_path = LIST, json_object = data)
 
 def add_to_blacklist(item):
-    """Add item to blacklist"""
+    """add item to blacklist"""
     data = read_json_file(file_path = LIST)
 
     # add to blacklist

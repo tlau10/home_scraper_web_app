@@ -9,17 +9,6 @@
             ],
             "class": "mainSection-b22fb noProject-eaed4"
         },
-    "immoscout":
-        {
-            "name": "immoScout24",
-            "urls":[
-                "https://www.immobilienscout24.de/Suche/de/baden-wuerttemberg/bodenseekreis/ueberlingen/wohnung-mieten?price=-1000.0&pricetype=calculatedtotalrent&enteredFrom=result_list",
-                "https://www.immobilienscout24.de/Suche/de/baden-wuerttemberg/bodenseekreis/friedrichshafen/wohnung-mieten?price=-1000.0&pricetype=calculatedtotalrent&enteredFrom=result_list",
-                "https://www.immobilienscout24.de/Suche/de/baden-wuerttemberg/bodenseekreis/uhldingen-muehlhofen/wohnung-mieten?price=-1000.0&pricetype=calculatedtotalrent&enteredFrom=result_list",
-                "https://www.immobilienscout24.de/Suche/de/baden-wuerttemberg/bodenseekreis/meersburg/wohnung-mieten?price=-1000.0&pricetype=calculatedtotalrent&enteredFrom=result_list"
-            ],
-            "class": "result-list-entry__brand-title-container "
-        },
     "immonet":
         {
             "name": "immonet",

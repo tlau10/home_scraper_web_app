@@ -107,7 +107,7 @@ class EbayScraper(AbstractScraper):
     def scrape(self):
         """start scraping"""
         for url in self.urls:
-            print(url+"\n")
+            print(url)
             page = requests.get(url = url, headers = self.header)
             soup = BeautifulSoup(page.content, "html.parser")
             result = soup.find_all("article", class_ = self.class_)

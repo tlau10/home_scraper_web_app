@@ -98,6 +98,32 @@ class ImmonetScraper(AbstractScraper):
 
         self.save_items()
 
+class EbayScraper(AbstractScraper):
+    """Scraper class for ebay"""
+
+    def __init__(self, urls, class_):
+        AbstractScraper.__init__(self, urls, class_)
+
+    def scrape(self):
+        """start scraping"""
+        for url in self.urls:
+            print(url+"\n")
+            page = requests.get(url = url, headers = self.header)
+            soup = BeautifulSoup(page.content, "html.parser")
+            result = soup.find_all("article", class_ = self.class_)
+
+            for article_tag in result:
+                # skip <article> tags with wrong city
+                text = str(article_tag)
+                if not any(city in text for city in CITIES):
+                    continue
+
+                link = "https://www.ebay-kleinanzeigen.de"+str(article_tag["data-href"])
+                self.items.append(link)
+                print(link)
+
+        self.save_items()
+
 def remove_from_whitelist(item):
     """remove item from whitelist"""
     data = read_json_file(file_path = LIST)
@@ -129,3 +155,6 @@ if __name__=="__main__":
 
     immonet = ImmonetScraper(urls = data["immonet"]["urls"], class_ = data["immonet"]["class"])
     immonet.scrape()
+
+    ebay = EbayScraper(urls = data["ebay"]["urls"], class_ = data["ebay"]["class"])
+    ebay.scrape()

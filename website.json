@@ -36,10 +36,10 @@
             "name": "ebay",
             "urls":[
                 "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/ueberlingen/anzeige:angebote/preis::1000/c203l9200",
-                "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/friedrichshafen/anzeige:angebote/preis::1000/c203l921",
+                "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/friedrichshafen/anzeige:angebote/preis::1000/c203l9211",
                 "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/uhldingen-muehlhofen/anzeige:angebote/preis::1000/c203l15248",
                 "https://www.ebay-kleinanzeigen.de/s-wohnung-mieten/meersburg/anzeige:angebote/preis::1000/c203l15294"
             ],
-            "class": "ellipsis"
+            "class": "aditem"
         }
 }

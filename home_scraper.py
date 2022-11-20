@@ -124,6 +124,33 @@ class EbayScraper(AbstractScraper):
 
         self.save_items()
 
+class WohnungsboerseScraper(AbstractScraper):
+    """Scraper class for wohnungsboerse"""
+
+    def __init__(self, urls, class_):
+        AbstractScraper.__init__(self, urls, class_)
+
+    def scrape(self):
+        """start scraping"""
+        for url in self.urls:
+            print(url)
+            page = requests.get(url = url, headers = self.header)
+            soup = BeautifulSoup(page.content, "html.parser")
+            result = soup.find_all("div", class_ = self.class_)
+
+            for div_tag in result:
+                # skip <div> tags with wrong city
+                text = str(div_tag)
+                if not any(city in text for city in CITIES):
+                    continue
+                
+                a_tag = div_tag.find("a")
+                link = str(a_tag["href"])
+                self.items.append(link)
+                print(link)
+
+        self.save_items()
+
 def remove_from_whitelist(item):
     """remove item from whitelist"""
     data = read_json_file(file_path = LIST)
@@ -150,11 +177,14 @@ if __name__=="__main__":
 
     data = read_json_file(file_path = WEBSITE)
 
-    immowelt = ImmoweltScraper(urls = data["immowelt"]["urls"], class_ = data["immowelt"]["class"])
-    immowelt.scrape()
+    #immowelt = ImmoweltScraper(urls = data["immowelt"]["urls"], class_ = data["immowelt"]["class"])
+    #immowelt.scrape()
 
-    immonet = ImmonetScraper(urls = data["immonet"]["urls"], class_ = data["immonet"]["class"])
-    immonet.scrape()
+    #immonet = ImmonetScraper(urls = data["immonet"]["urls"], class_ = data["immonet"]["class"])
+    #immonet.scrape()
 
-    ebay = EbayScraper(urls = data["ebay"]["urls"], class_ = data["ebay"]["class"])
-    ebay.scrape()
+    #ebay = EbayScraper(urls = data["ebay"]["urls"], class_ = data["ebay"]["class"])
+    #ebay.scrape()
+
+    wohnungsboerse = WohnungsboerseScraper(urls = data["wohnungsboerse"]["urls"], class_ = data["wohnungsboerse"]["class"])
+    wohnungsboerse.scrape()

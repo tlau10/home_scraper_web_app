@@ -1,13 +1,14 @@
 {
   "whitelist": [
-    "https://www.immowelt.de/expose/272925w",
-    "https://www.immonet.de/angebot/49048101",
-    "https://www.immonet.de/angebot/48937780",
     "https://www.ebay-kleinanzeigen.de/s-anzeige/helle-3-zimmer-wohnung-im-gruenen/2265446178-203-9212",
-    "https://www.ebay-kleinanzeigen.de/s-anzeige/zwei-zimmer-wohnung-in-meersburg/2276318077-203-9391",
-    "https://www.immonet.de/angebot/49021510",
+    "https://www.immowelt.de/expose/272925w",
+    "https://www.immowelt.de/expose/272wj5w",
+    "https://www.immonet.de/angebot/48937780",
+    "https://www.immonet.de/angebot/49048101",
     "https://www.ebay-kleinanzeigen.de/s-anzeige/helle-seenahe-2-zimmer-wohnung-mit-balkon/2277192813-203-9207",
-    "https://www.immowelt.de/expose/272wj5w"
+    "https://www.ebay-kleinanzeigen.de/s-anzeige/zwei-zimmer-wohnung-in-meersburg/2276318077-203-9391",
+    "https://www.wohnungsboerse.net/immodetail/30964010",
+    "https://www.immonet.de/angebot/49021510"
   ],
   "blacklist": [
     "https://www.immowelt.de/expose/26k9s5p",
@@ -86,6 +87,22 @@
     "https://www.ebay-kleinanzeigen.de/s-anzeige/2-zi-befristet-01-01-23-31-03-23-neubau-modern-moebliert-garten/2226259966-203-9213",
     "https://www.immonet.de/angebot/48986938",
     "https://www.ebay-kleinanzeigen.de/s-anzeige/mietwohnung-1-zimmer-im-3-zimmer-wohnung/2239013237-203-9213",
-    "https://www.immonet.de/angebot/49095993"
+    "https://www.immonet.de/angebot/49095993",
+    "https://www.ebay-kleinanzeigen.de/s-anzeige/schoene-wohnung-mit-suedbalkon-ab-1-12-2022-zu-vermieten/2278466982-203-9205",
+    "javascript:void(0);",
+    "https://www.wohnungsboerse.net/immodetail/30861347",
+    "https://www.wohnungsboerse.net/immodetail/29957732",
+    "https://www.wohnungsboerse.net/immodetail/30834454",
+    "https://www.wohnungsboerse.net/immodetail/30795888",
+    "https://www.wohnungsboerse.net/immodetail/30962753",
+    "https://www.wohnungsboerse.net/immodetail/30909812",
+    "https://www.wohnungsboerse.net/immodetail/30885452",
+    "https://www.wohnungsboerse.net/immodetail/30893618",
+    "https://www.wohnungsboerse.net/immodetail/30581028",
+    "https://www.wohnungsboerse.net/immodetail/30854997",
+    "https://www.wohnungsboerse.net/immodetail/30910837",
+    "https://www.wohnungsboerse.net/immodetail/30839129",
+    "https://www.wohnungsboerse.net/immodetail/30885477",
+    "https://www.wohnungsboerse.net/immodetail/30872113"
   ]
 }

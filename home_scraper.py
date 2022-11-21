@@ -44,6 +44,11 @@ class AbstractScraper:
         "return subtraction of two lists"
         return list(set(list_a) - set(list_b))
 
+    def no_valid_city(self, tag):
+        """returns True if no valid city was found in given text, otherwise False"""
+        text = str(tag)
+        return True if not any(city in text for city in CITIES) else False 
+
 class ImmoweltScraper(AbstractScraper):
     """Scraper class for immowelt"""
 
@@ -61,8 +66,7 @@ class ImmoweltScraper(AbstractScraper):
 
             for a_tag in result:
                 # skip <a> tags with wrong city
-                text = str(a_tag)
-                if not any(city in text for city in CITIES):
+                if self.no_valid_city(tag = a_tag):
                     continue
 
                 link = a_tag["href"]
@@ -87,8 +91,7 @@ class ImmonetScraper(AbstractScraper):
 
             for div_tag in result:
                 # skip <div> tags with wrong city
-                text = str(div_tag)
-                if not any(city in text for city in CITIES):
+                if self.no_valid_city(tag = div_tag):
                     continue
 
                 a_tag = div_tag.find("a")
@@ -114,8 +117,7 @@ class EbayScraper(AbstractScraper):
 
             for article_tag in result:
                 # skip <article> tags with wrong city
-                text = str(article_tag)
-                if not any(city in text for city in CITIES):
+                if self.no_valid_city(tag = article_tag):
                     continue
 
                 link = "https://www.ebay-kleinanzeigen.de"+str(article_tag["data-href"])
@@ -140,8 +142,7 @@ class WohnungsboerseScraper(AbstractScraper):
 
             for div_tag in result:
                 # skip <div> tags with wrong city
-                text = str(div_tag)
-                if not any(city in text for city in CITIES):
+                if self.no_valid_city(tag = div_tag):
                     continue
                 
                 a_tag = div_tag.find("a")
@@ -167,8 +168,7 @@ class ImmobiloScraper(AbstractScraper):
 
             for div_tag in result:
                 # skip <div> tags with wrong city
-                text = str(div_tag)
-                if not any(city in text for city in CITIES):
+                if self.no_valid_city(tag = div_tag):
                     continue
                 
                 a_tag = div_tag.find("a")

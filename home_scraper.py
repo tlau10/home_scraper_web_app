@@ -230,20 +230,20 @@ if __name__=="__main__":
 
     data = read_json_file(file_path = WEBSITE)
 
-    #immowelt = ImmoweltScraper(urls = data["immowelt"]["urls"], class_ = data["immowelt"]["class"])
-    #immowelt.scrape()
+    immowelt = ImmoweltScraper(urls = data["immowelt"]["urls"], class_ = data["immowelt"]["class"])
+    immowelt.scrape()
 
-    #immonet = ImmonetScraper(urls = data["immonet"]["urls"], class_ = data["immonet"]["class"])
-    #immonet.scrape()
+    immonet = ImmonetScraper(urls = data["immonet"]["urls"], class_ = data["immonet"]["class"])
+    immonet.scrape()
 
-    #ebay = EbayScraper(urls = data["ebay"]["urls"], class_ = data["ebay"]["class"])
-    #ebay.scrape()
+    ebay = EbayScraper(urls = data["ebay"]["urls"], class_ = data["ebay"]["class"])
+    ebay.scrape()
 
-    #wohnungsboerse = WohnungsboerseScraper(urls = data["wohnungsboerse"]["urls"], class_ = data["wohnungsboerse"]["class"])
-    #wohnungsboerse.scrape()
+    wohnungsboerse = WohnungsboerseScraper(urls = data["wohnungsboerse"]["urls"], class_ = data["wohnungsboerse"]["class"])
+    wohnungsboerse.scrape()
 
-    #immobilo = ImmobiloScraper(urls = data["immobilo"]["urls"], class_ = data["immobilo"]["class"])
-    #immobilo.scrape()
+    immobilo = ImmobiloScraper(urls = data["immobilo"]["urls"], class_ = data["immobilo"]["class"])
+    immobilo.scrape()
 
     meinestadt = MeinestadtScraper(urls = data["meinestadt"]["urls"], class_ = data["meinestadt"]["class"])
     meinestadt.scrape()

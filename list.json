@@ -1,5 +1,10 @@
 {
-  "whitelist": [],
+  "whitelist": [
+    "https://www.meinestadt.de/expose/iw-27wja52",
+    "https://www.meinestadt.de/expose/iw-2a8344z",
+    "https://www.meinestadt.de/expose/iw-283pn52",
+    "https://www.meinestadt.de/expose/iw-2lv9s4c"
+  ],
   "blacklist": [
     "https://www.immowelt.de/expose/26k9s5p",
     "https://www.immowelt.de/expose/279zs5t",

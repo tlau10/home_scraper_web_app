@@ -51,5 +51,16 @@
                 "https://www.immobilo.de/suchergebnisse?l=Uhldingen-M%C3%BChlhofen&r=0km&_multiselect_r=0km&t=apartment%3Arental%3Aliving&a=de.uhldingen-muehlhofen&pf=&pt=1000&rf=0&rt=0&sf=&st=&yf=&yt=&ff=&ft=&s=relevance&pa=&o=&ad=&u="
             ],
             "class": "item__main-info clearfix"
+        },
+    "meinestadt":
+        {
+            "name": "meinestadt",
+            "urls":[
+                "https://www.meinestadt.de/ueberlingen/immobilien",
+                "https://www.meinestadt.de/friedrichshafen/immobilien",
+                "https://www.meinestadt.de/meersburg/immobilien",
+                "https://www.meinestadt.de/uhldingen-muehlhofen/immobilien"
+            ],
+            "class": "m-resultListEntries__metainfos -spaceBetween"
         }
 }

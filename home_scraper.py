@@ -178,32 +178,6 @@ class ImmobiloScraper(AbstractScraper):
 
         self.save_items()
 
-class MeinestadtScraper(AbstractScraper):
-    """Scraper class for Meinestadt"""
-
-    def __init__(self, urls, class_):
-        AbstractScraper.__init__(self, urls, class_)
-
-    def scrape(self):
-        """start scraping"""
-        for url in self.urls:
-            print(url)
-            page = requests.get(url = url, headers = self.header)
-            soup = BeautifulSoup(page.content, "html.parser")
-            result = soup.find_all("div", class_ = self.class_)
-
-            for div_tag in result:
-                # skip <div> tags with wrong city
-                if self.no_valid_city(tag = div_tag):
-                    continue
-
-            a_tag = div_tag.find("a")
-            link = str(a_tag["href"])
-            self.items.append(link)
-            print(link)
-        
-        self.save_items()
-
 def remove_from_whitelist(item):
     """remove item from whitelist"""
     data = read_json_file(file_path = LIST)
@@ -244,6 +218,3 @@ if __name__=="__main__":
 
     immobilo = ImmobiloScraper(urls = data["immobilo"]["urls"], class_ = data["immobilo"]["class"])
     immobilo.scrape()
-
-    meinestadt = MeinestadtScraper(urls = data["meinestadt"]["urls"], class_ = data["meinestadt"]["class"])
-    meinestadt.scrape()
